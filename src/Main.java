@@ -10,8 +10,12 @@ public class Main {
         // System.out.println(solution.containsDuplicate(nums));
 
         // 268. Missing Number
-        int[] nums = {3, 0, 1, 4, 2, 6};
-        System.out.println(solution.missingNumber(nums));
+        // int[] nums = {3, 0, 1};
+        // System.out.println(solution.missingNumber(nums));
+
+        // 448. Find All Numbers Disappeared in an Array
+        int[] nums = {3, 0, 1, 5};
+        System.out.println(solution.findDisappearedNumbers(nums));
 
     }
 }

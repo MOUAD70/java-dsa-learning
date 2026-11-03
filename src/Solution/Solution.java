@@ -1,9 +1,6 @@
 package Solution;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class Solution {
 
@@ -48,4 +45,19 @@ public class Solution {
 
         return result;
     }
+
+    // 1. Two Sum
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> numbers = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int diff = target - nums[i];
+            if (numbers.containsKey(diff)) {
+                return new int[] {numbers.get(diff), i};
+            }
+            numbers.put(nums[i], i);
+        }
+        return new int[] {0, 0};
+    }
+
 }

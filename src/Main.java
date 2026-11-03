@@ -1,5 +1,7 @@
 import Solution.Solution;
 
+import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -14,8 +16,14 @@ public class Main {
         // System.out.println(solution.missingNumber(nums));
 
         // 448. Find All Numbers Disappeared in an Array
-        int[] nums = {3, 0, 1, 5};
-        System.out.println(solution.findDisappearedNumbers(nums));
+        // int[] nums = {3, 0, 1, 5};
+        // System.out.println(solution.findDisappearedNumbers(nums));
+
+        // 1. Two Sum
+        // int[] nums = {1, 2, 3};
+        // int target = 3;
+        //System.out.println(Arrays.toString(solution.twoSum(nums, target)));
+        
 
     }
 }

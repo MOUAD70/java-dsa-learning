@@ -60,4 +60,19 @@ public class Solution {
         return new int[] {0, 0};
     }
 
+    // 1365. How Many Numbers Are Smaller Than the Current Number
+    public int[] smallerNumbersThanCurrent(int[] nums) {
+        int[] result = nums.clone();
+        HashMap<Integer, Integer> numbers = new HashMap<>();
+        Arrays.sort(result);
+
+        for (int i = 0; i < result.length; i++) {
+            numbers.putIfAbsent(result[i], i);
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            result[i] = numbers.get(nums[i]);
+        }
+        return result;
+    }
 }

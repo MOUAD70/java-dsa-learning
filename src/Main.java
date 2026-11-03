@@ -23,7 +23,10 @@ public class Main {
         // int[] nums = {1, 2, 3};
         // int target = 3;
         //System.out.println(Arrays.toString(solution.twoSum(nums, target)));
-        
+
+        // 1365. How Many Numbers Are Smaller Than the Current Number
+        int[] nums = {8, 1, 2, 2, 3};
+        System.out.println(Arrays.toString(solution.smallerNumbersThanCurrent(nums)));
 
     }
 }

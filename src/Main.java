@@ -29,10 +29,14 @@ public class Main {
         // System.out.println(Arrays.toString(solution.smallerNumbersThanCurrent(nums)));
 
         // 242. Valid Anagram
-        String s = "mouad";
-        String t = "admou";
+        // String s = "mouad";
+        // String t = "admou";
 
-        System.out.println(solution.isAnagram(s, t));
+        // System.out.println(solution.isAnagram(s, t));
+
+        // 1929. Concatenation of Array
+        int[] nums = {1, 2, 3};
+        System.out.println(Arrays.toString(solution.getConcatenation(nums)));
 
     }
 }

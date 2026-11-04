@@ -25,8 +25,14 @@ public class Main {
         //System.out.println(Arrays.toString(solution.twoSum(nums, target)));
 
         // 1365. How Many Numbers Are Smaller Than the Current Number
-        int[] nums = {8, 1, 2, 2, 3};
-        System.out.println(Arrays.toString(solution.smallerNumbersThanCurrent(nums)));
+        // int[] nums = {8, 1, 2, 2, 3};
+        // System.out.println(Arrays.toString(solution.smallerNumbersThanCurrent(nums)));
+
+        // 242. Valid Anagram
+        String s = "mouad";
+        String t = "admou";
+
+        System.out.println(solution.isAnagram(s, t));
 
     }
 }

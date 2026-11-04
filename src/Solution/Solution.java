@@ -75,4 +75,37 @@ public class Solution {
         }
         return result;
     }
+
+    // 242. Valid Anagram
+    public boolean isAnagram(String s, String t) {
+        // MTH 1:
+        // String toLowerS = s.toLowerCase();
+        // String toLowerT = t.toLowerCase();
+
+        if (s.length() != t.length()) return false;
+
+        char[] first = s.toCharArray();
+        char[] second = t.toCharArray();
+
+        Arrays.sort(first);
+        Arrays.sort(second);
+
+        return Arrays.equals(first, second);
+        // MTH 2:
+        // if (s.length() != t.length()) return false;
+
+        // int[] chars = new int[26];
+        // for (int i = 0; i < s.length(); i++) {
+        //     chars[s.charAt(i) - 'a']++;
+        //     chars[t.charAt(i) - 'a']--;
+        // }
+
+        // for (int c : chars) {
+        //     if (c != 0) {
+        //         return false;
+        //     }
+        // }
+
+        // return true;
+    }
 }

@@ -120,4 +120,36 @@ public class Solution {
 
         return ans;
     }
+
+    // 704. Binary Search
+    public int search(int[] nums, int target) {
+        if (nums.length == 0) return -1;
+
+        int start = 0;
+        int end = nums.length - 1;
+
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] > target) {
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
+        }
+        return -1;
+    }
+
+    // Using Recursion
+    public int searchRec(int[] nums, int target, int start, int end) {
+        if (start > end) return -1;
+        int mid = (start + end) / 2;
+
+        if (nums[mid] == target) return mid;
+        if (target > nums[mid]) return searchRec(nums, target, mid + 1, end);
+        return searchRec(nums, target, start, mid - 1);
+    }
+
+
 }

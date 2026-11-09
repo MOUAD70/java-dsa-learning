@@ -39,9 +39,13 @@ public class Main {
         // System.out.println(Arrays.toString(solution.getConcatenation(nums)));
 
         // 704. Binary Search
-        int[] T = {1, 2, 3, 4, 5};
-        System.out.println(solution.search(T, 4));
-        System.out.println(solution.searchRec(T, 4, 0, T.length - 1));
+        // int[] T = {1, 2, 3, 4, 5};
+        // System.out.println(solution.search(T, 4));
+        // System.out.println(solution.searchRec(T, 4, 0, T.length - 1));
+
+        // 14. Longest Common Prefix
+        String[] strs = {"flower","flow","flight"};
+        System.out.println(solution.longestCommonPrefix(strs));
 
 
     }

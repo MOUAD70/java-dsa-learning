@@ -44,8 +44,13 @@ public class Main {
         // System.out.println(solution.searchRec(T, 4, 0, T.length - 1));
 
         // 14. Longest Common Prefix
-        String[] strs = {"flower","flow","flight"};
-        System.out.println(solution.longestCommonPrefix(strs));
+        // String[] strs = {"flower","flow","flight"};
+        // System.out.println(solution.longestCommonPrefix(strs));
+
+        // 27. Remove Element
+        int[] nums = {2, 3, 3, 2};
+        int val = 3;
+        System.out.println(solution.removeElement(nums, val));
 
 
     }

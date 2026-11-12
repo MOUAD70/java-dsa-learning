@@ -21,8 +21,8 @@ public class Main {
 
         // 1. Two Sum
         // int[] nums = {1, 2, 3};
-        // int target = 3;
-        //System.out.println(Arrays.toString(solution.twoSum(nums, target)));
+        // int target = 5;
+        // System.out.println(Arrays.toString(solution.twoSum(nums, target)));
 
         // 1365. How Many Numbers Are Smaller Than the Current Number
         // int[] nums = {8, 1, 2, 2, 3};
@@ -48,10 +48,12 @@ public class Main {
         // System.out.println(solution.longestCommonPrefix(strs));
 
         // 27. Remove Element
-        int[] nums = {2, 3, 3, 2};
-        int val = 3;
-        System.out.println(solution.removeElement(nums, val));
+        // int[] nums = {2, 3, 3, 2};
+        // int val = 3;
+        // System.out.println(solution.removeElement(nums, val));
 
-
+        // 169. Majority Element
+        int[] nums = {3, 2, 3};
+        System.out.println(solution.majorityElement(nums));
     }
 }

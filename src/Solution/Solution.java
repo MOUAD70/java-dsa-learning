@@ -180,5 +180,46 @@ public class Solution {
         return valid_size;
     }
 
+    // 169. Majority Element
+//    public int majorityElement(int[] nums) {
+//        // Using HashMap
+//        if (nums.length == 0) return 0;
+//        HashMap<Integer, Integer> numbers = new HashMap<>();
+//
+//        for (int i = 0; i < nums.length; i++) {
+//            if (numbers.containsKey(nums[i])) {
+//                numbers.put(nums[i], numbers.get(nums[i]) + 1);
+//            } else {
+//                numbers.put(nums[i], 1);
+//            }
+//        }
+//
+//        int result = 0;
+//        for (int key : numbers.keySet()) {
+//            if (numbers.get(key) > nums.length / 2) {
+//                result = key;
+//            }
+//        }
+//
+//        return result;
+//    }
+
+     // Using Boyer-moore method
+     public int majorityElement(int[] nums) {
+         if (nums.length == 0) return 0;
+
+         int res = 0;
+         int count = 0;
+
+         for (int n : nums) {
+             if (count == 0) {
+                 res = n;
+             }
+
+             count += (n == res) ? 1 : -1;
+         }
+
+         return res;
+     }
 
 }
